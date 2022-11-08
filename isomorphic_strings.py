@@ -6,7 +6,7 @@ def transform(s):
         if c not in hash_map:
             hash_map[c] = i 
         new_str.append(str(hash_map[c]))
-    return ''.join(new_str)
+    return ' '.join(new_str)
 
 def isIsomorphic(s, t):
     return transform(s) == transform(t)
